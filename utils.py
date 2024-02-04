@@ -29,3 +29,10 @@ def pyatirka(n):
         return False
     else:
         return True
+        
+def NSD(a, b):
+    if b > a:
+    a, b = b, a
+    while b > 0:
+        a, b = b, (a % b)
+    return a
