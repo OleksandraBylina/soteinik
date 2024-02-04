@@ -20,3 +20,12 @@ def triangle(a, b, c):
             print ("Трикутник тупокутний")
         else:
             print ("Трикутник є, але НЕ тупокутний")
+def pyatirka(n):
+    if n%5!=0:
+        return False
+    while n%5==0:
+        n=n/5
+    if n%5!=0 and n!=1:
+        return False
+    else:
+        return True
