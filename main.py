@@ -9,3 +9,5 @@ print(utils.pyatirka(25))
 result = is_prime(13)
 print(result)
 
+
+print(utils.NSD(monkey, test))

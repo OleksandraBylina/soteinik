@@ -31,12 +31,16 @@ def pyatirka(n):
         return True
         
 def NSD(a, b):
-    if b > a:
-    a, b = b, a
-    while b > 0:
-        a, b = b, (a % b)
-    return a
-
+    try:
+        if b > a:
+        a, b = b, a
+        while b > 0:
+            a, b = b, (a % b)
+        return a
+    except SyntaxError:
+        return "MONKEY"
+    
+    
 def is_prime(number):
     if number < 2:
         return False
