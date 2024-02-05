@@ -50,3 +50,17 @@ def is_prime(number):
     return True
 
 print()
+
+
+def is_composite_number(num):
+    if num < 4:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return True
+    return False
+user_input = int(input("Введіть число: "))
+if is_composite_number(user_input):
+    print(f"{user_input} є складеним числом.")
+else:
+    print(f"{user_input} не є складеним числом.")
