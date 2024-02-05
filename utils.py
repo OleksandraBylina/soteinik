@@ -37,15 +37,12 @@ def NSD(a, b):
         a, b = b, (a % b)
     return a
 
-
-n = int(input())
-count = 0
-num = 1
-
-while count < n:
-    if num % 2 != 0 and num % 3 != 0 and num % 5 != 0:
-        print(num, end=" ")
-        count += 1
-    num += 1
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
 
 print()
