@@ -37,7 +37,7 @@ def NSD(a, b):
         while b > 0:
             a, b = b, (a % b)
         return a
-    except SyntaxError:
+    except:
         return "MONKEY"
     
     
